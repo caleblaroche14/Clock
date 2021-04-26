@@ -13,6 +13,12 @@ function settime(){
     }else{
         hours.innerText = format((time.getHours() - 12));
     }
+
+    if (time.getHours() < 12){
+        ampm.innerText = "AM";
+    }else{
+        ampm.innerText = "PM";
+    }
 }
 
 function format(d){
